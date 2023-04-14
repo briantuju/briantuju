@@ -1,0 +1,10 @@
+/*
+  Since this is a global file, we only want to use global styles here.
+  So it's a good place to bring in Tailwind CSS.
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import 'sass/base';

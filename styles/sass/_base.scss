@@ -1,0 +1,21 @@
+@use 'variables' as vars;
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: vars.$color-text;
+  background-color: vars.$color-light;
+}
+
+@media (prefers-color-scheme: dark) {
+}
