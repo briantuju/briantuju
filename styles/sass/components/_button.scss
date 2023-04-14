@@ -1,0 +1,19 @@
+.bt_btn {
+  @apply bg-brand text-white font-bold py-2 px-6 rounded-md border-none;
+
+  &:hover {
+    @apply bg-brand-dark;
+  }
+
+  &:focus {
+    @apply outline-none ring-2 ring-brand;
+  }
+
+  &--dark {
+    @apply bg-dark;
+
+    &:focus {
+      @apply ring-dark;
+    }
+  }
+}
