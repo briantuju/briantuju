@@ -1,0 +1,4 @@
+// Custom container class
+.bt_container {
+  @apply container mx-auto max-w-[90%] sm:max-w-[85%] xl:max-w-[1280px] 2xl:max-w-[1536px];
+}
