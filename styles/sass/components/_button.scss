@@ -16,4 +16,16 @@
       @apply ring-dark;
     }
   }
+
+  &--sm {
+    @apply py-1.5 px-3;
+  }
+
+  &--lg {
+    @apply py-3 px-8;
+  }
+
+  &--xl {
+    @apply py-4 px-10;
+  }
 }

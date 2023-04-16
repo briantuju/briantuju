@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
-import Navigation from './Navigation'
 import Footer from './Footer'
+import Header from './Header'
 
 const Layout = ({ children }: ChildrenProp) => {
   return (
@@ -11,7 +11,7 @@ const Layout = ({ children }: ChildrenProp) => {
         <meta name="description" content="Portfolio Website for Brian Tuju" />
       </Head>
 
-      <Navigation />
+      <Header />
 
       <main>{children}</main>
 
