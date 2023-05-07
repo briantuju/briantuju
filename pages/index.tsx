@@ -3,6 +3,15 @@ import { NextPage } from 'next'
 
 import myImage from '/public/img/me.jpg'
 import Container from '@/components/misc/Container'
+import SkillBadge, { SkillBadgeType } from '@/components/misc/SkillBadge'
+
+const skills = ['JavaScript', 'TypeScript', 'PHP', 'Java']
+const skillTheme: SkillBadgeType['theme'][] = [
+  'yellow',
+  'sky',
+  'blue',
+  'orange',
+]
 
 const Home: NextPage = () => {
   return (
@@ -33,6 +42,22 @@ const Home: NextPage = () => {
           </div>
         </div>
       </Container>
+
+      <section className="skills_badge_section w-full py-12 bg-dark dark:bg-dark md:rounded-full text-center shadow-xl">
+        <Container>
+          <div className="overflow-x-auto">
+            <div className="grid gap-4 grid-cols-4 items-center min-w-max">
+              {skills.map((skill, index) => (
+                <SkillBadge
+                  key={skill}
+                  text={skill}
+                  theme={skillTheme[index]}
+                />
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
     </div>
   )
 }
