@@ -1,5 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  // Toggle dark mode manually
+  darkMode: 'class',
+
   content: [
     './pages/**/*.{js,ts,jsx,tsx}',
     './components/**/*.{js,ts,jsx,tsx}',
@@ -26,6 +29,11 @@ module.exports = {
 
         light: { DEFAULT: '#f3f4f6' },
       },
+    },
+  },
+  variants: {
+    extend: {
+      backgroundImage: ['dark'],
     },
   },
   plugins: [],

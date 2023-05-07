@@ -51,10 +51,10 @@ const Navigation = () => {
             {/* Navigation Items */}
             {showMobileNav || !isMobile ? (
               <div
-                className={`absolute md:relative left-0 top-12 md:top-0 w-full md:w-auto bg-white py-4 md:py-0 block z-10`}
+                className={`absolute md:relative left-0 top-12 md:top-0 w-full md:w-auto py-4 md:py-0 block z-10`}
               >
                 <div className="bt_container md:max-w-none">
-                  <ul className="flex flex-col md:flex-row gap-4 xl:gap-8 items-start md:items-center justify-start font-bold text-xl text-brand-dark">
+                  <ul className="flex flex-col md:flex-row gap-4 xl:gap-8 items-start md:items-center justify-start font-bold text-xl text-brand-dark dark:text-brand-light">
                     {/* Logo */}
                     <Link
                       href={'/'}

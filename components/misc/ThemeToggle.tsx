@@ -57,7 +57,7 @@ const ThemeToggle = () => {
     >
       {theme === themes.dark ? (
         <Icon
-          className="bt_color-brand cursor-pointer hover:text-brand-dark mt-3"
+          className="bt_color-brand dark:text-light cursor-pointer hover:text-brand-dark mt-3"
           icon={SunIcon}
           size={52}
           onClick={setLightTheme}
@@ -65,7 +65,7 @@ const ThemeToggle = () => {
         />
       ) : (
         <Icon
-          className="bt_color-brand cursor-pointer hover:text-brand-dark mt-3"
+          className="bt_color-brand dark:text-light cursor-pointer hover:text-brand-dark mt-3"
           icon={MoonIcon}
           size={52}
           onClick={setDarkTheme}
