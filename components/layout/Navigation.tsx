@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react'
 
 import Button from '../button/Button'
 import Container from '../misc/Container'
+import ThemeToggle from '../misc/ThemeToggle'
 import IconMenuLeft from '../icons/IconMenuLeft'
 import logoCropped from '@/public/img/logo-cropped.png'
 import { Icon } from '../misc/Icon'
@@ -79,8 +80,13 @@ const Navigation = () => {
               </div>
             ) : null}
 
-            {/* CTA Button */}
-            <Button className="bt_btn--sm rounded-full">Contact Me</Button>
+            <div className="flex gap-8 items-center">
+              {/* CTA Button */}
+              <Button className="bt_btn--sm rounded-full">Contact Me</Button>
+
+              {/* Theme toggle */}
+              <ThemeToggle />
+            </div>
           </div>
         </nav>
       </Container>
