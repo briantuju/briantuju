@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { useState } from 'react'
+import { useRouter } from 'next/router'
+import { useEffect, useState } from 'react'
 
 import Button from '../button/Button'
 import Container from '../misc/Container'
@@ -11,12 +12,27 @@ import { maxMobileWidth } from '@/utils'
 import { Size, useWindowSize } from '@/hooks/useWindowSize'
 
 const Navigation = () => {
+  const router = useRouter()
   const size: Size = useWindowSize()
   const [showMobileNav, setShowMobileNav] = useState<boolean>(false)
 
   const toggleMobileNav = () => setShowMobileNav(!showMobileNav)
 
   const isMobile = size.width ? size.width <= maxMobileWidth : false
+
+  useEffect(() => {
+    /*
+     * When the route changes, we need to toggle the visibility
+     * of the mobile menu
+     */
+    const handleRouteChange = () => setShowMobileNav(false)
+
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [router.events])
 
   return (
     <div className="relative">
