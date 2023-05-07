@@ -3,7 +3,7 @@
 .bt_ {
   // Custom container class
   &container {
-    @apply container mx-auto max-w-[90%] sm:max-w-[85%] xl:max-w-[1280px] 2xl:max-w-[1536px];
+    @apply container mx-auto w-[90%] md:max-w-[80%];
   }
 
   // Text Color

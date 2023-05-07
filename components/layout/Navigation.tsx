@@ -2,13 +2,13 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useState } from 'react'
 
-import { Size, useWindowSize } from '@/hooks/useWindowSize'
-import logoCropped from '@/public/img/logo-cropped.png'
-import IconMenuLeft from '../icons/IconMenuLeft'
-import { maxMobileWidth } from '@/utils'
-import Container from '../misc/Container'
 import Button from '../button/Button'
+import Container from '../misc/Container'
+import IconMenuLeft from '../icons/IconMenuLeft'
+import logoCropped from '@/public/img/logo-cropped.png'
 import { Icon } from '../misc/Icon'
+import { maxMobileWidth } from '@/utils'
+import { Size, useWindowSize } from '@/hooks/useWindowSize'
 
 const Navigation = () => {
   const size: Size = useWindowSize()
@@ -34,26 +34,26 @@ const Navigation = () => {
             {/* Navigation Items */}
             {showMobileNav || !isMobile ? (
               <div
-                className={`absolute md:relative left-0 top-12 md:top-0 w-full md:w-auto bg-white py-4 md:py-0 block`}
+                className={`absolute md:relative left-0 top-12 md:top-0 w-full md:w-auto bg-white py-4 md:py-0 block z-10`}
               >
                 <div className="bt_container md:max-w-none">
                   <ul className="flex flex-col md:flex-row gap-4 xl:gap-8 items-start md:items-center justify-start font-bold text-xl text-brand-dark">
                     {/* Logo */}
                     <Link
                       href={'/'}
-                      className="absolute md:relative -top-11 md:top-0 left-20 md:left-0"
+                      className="md:relative -top-11 md:top-0 left-20 md:left-0"
                     >
                       <Image
                         src={logoCropped}
                         alt="Brian Tuju logo"
                         className="object-cover rounded-lg"
-                        width={36}
-                        height={36}
+                        width={60}
+                        height={60}
                       />
                     </Link>
                     {/* Links */}
                     <li>
-                      <Link href={'/about'}>About Me</Link>
+                      <Link href={'/profile'}>Profile</Link>
                     </li>
                     <li>
                       <Link href={'/projects'}>Projects</Link>

@@ -7,5 +7,5 @@
 @tailwind components;
 @tailwind utilities;
 
-@import 'sass/base', 'sass/utilities', 'sass/components/button',
-  'sass/components/input';
+@import 'sass/animations', 'sass/base', 'sass/utilities',
+  'sass/components/button', 'sass/components/input';
