@@ -1,8 +1,12 @@
-const Button = ({ ...props }: React.HTMLProps<HTMLButtonElement>) => {
+const Button = (
+  props: React.HTMLProps<HTMLButtonElement> & {
+    type?: 'submit' | 'reset' | 'button'
+  }
+) => {
   return (
     <button
+      type={props.type || 'button'}
       {...props}
-      type={'button' || props.type}
       className={`bt_btn ${props.className || ''}`}
     >
       {props.children}

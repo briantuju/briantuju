@@ -1,8 +1,10 @@
-.bt_input {
-  @apply px-3 py-2 placeholder-gray-400 text-text bg-white border 
-  border-gray-400 rounded-md border-none;
+.bt_input,
+.bt_textarea {
+  @apply px-3 py-2 placeholder-gray-400 text-text dark:text-light bg-gray-50
+  dark:bg-dark border border-gray-400 rounded-md border-none outline outline-1 
+  outline-gray-300 w-auto transition-all;
 
   &:focus {
-    @apply outline-none ring-2 ring-brand border-brand;
+    @apply outline-none ring-2 ring-brand border-brand bg-white dark:bg-dark;
   }
 }

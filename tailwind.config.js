@@ -11,8 +11,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'hero-img':
-          "linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.85)), url('/img/me.jpg')",
+        'contact-bg':
+          "linear-gradient(rgba(255,255,255,0), rgba(255,255,255,0)), url('/contact-bg.svg')",
         'hero-bg':
           "linear-gradient(rgba(255,255,255,0.5), rgba(255,255,255,0)), url('/hero-bg.svg')",
         'projects-bg':

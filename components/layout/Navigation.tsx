@@ -3,7 +3,6 @@ import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 
-import Button from '../button/Button'
 import Container from '../misc/Container'
 import ThemeToggle from '../misc/ThemeToggle'
 import IconMenuLeft from '../icons/IconMenuLeft'
@@ -68,12 +67,10 @@ const Navigation = () => {
                         height={60}
                       />
                     </Link>
+
                     {/* Links */}
                     <li>
                       <Link href={'/profile'}>Profile</Link>
-                    </li>
-                    <li>
-                      <Link href={'/projects'}>Projects</Link>
                     </li>
                   </ul>
                 </div>
@@ -82,7 +79,9 @@ const Navigation = () => {
 
             <div className="flex gap-8 items-center">
               {/* CTA Button */}
-              <Button className="bt_btn--sm rounded-full">Contact Me</Button>
+              <Link href="/contact" className="bt_btn bt_btn--sm rounded-full">
+                Contact Me
+              </Link>
 
               {/* Theme toggle */}
               <ThemeToggle />
