@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Script from 'next/script'
 
 import Footer from './Footer'
 import Header from './Header'
@@ -20,6 +21,8 @@ const Layout = ({ children }: ChildrenProp) => {
       <main>{children}</main>
 
       <Footer />
+
+      <Script src="https://s.pageclip.co/v1/pageclip.js" />
     </>
   )
 }

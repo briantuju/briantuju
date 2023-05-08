@@ -7,5 +7,7 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://s.pageclip.co/v1/pageclip.css');
+
 @import 'sass/animations', 'sass/base', 'sass/utilities',
   'sass/components/button', 'sass/components/input';
