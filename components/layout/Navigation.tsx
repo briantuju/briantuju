@@ -69,9 +69,9 @@ const Navigation = () => {
                     </Link>
 
                     {/* Links */}
-                    <li>
+                    {/* <li>
                       <Link href={'/profile'}>Profile</Link>
-                    </li>
+                    </li> */}
                   </ul>
                 </div>
               </div>
