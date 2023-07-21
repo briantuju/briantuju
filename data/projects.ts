@@ -29,6 +29,16 @@ const projects: ProjectType[] = [
     description:
       "Wikipages Creator is the best wikipedia page creation agency. Whether you're looking to start with an agency or personal brand, Wikipages Creator will help you unlock the potential of your brand with a wikipedia page.",
   },
+  {
+    id: 3,
+    imgSrc: '/img/projects/publishwikipages.png',
+    imgAlt: 'Publish Wikipages',
+    title: 'Publish Wikipages',
+    url: 'https://www.publishwikipages.com',
+    tech: 'Website',
+    description:
+      'Publishwikipages provides extensive Wikipedia services such as creating, writing, updating, and managing wikipedia pages',
+  },
 ]
 
 export default projects
