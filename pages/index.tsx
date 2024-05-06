@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import { NextPage } from 'next'
 
-import projects from '@/data/projects'
+// import projects from '@/data/projects'
 import myImage from '/public/img/me.jpg'
 import Container from '@/components/misc/Container'
-import ProjectCard from '@/components/projects/ProjectCard'
-import SectionHeading from '@/components/misc/SectionHeading'
+// import ProjectCard from '@/components/projects/ProjectCard'
+// import SectionHeading from '@/components/misc/SectionHeading'
 import SkillBadge, { SkillBadgeType } from '@/components/misc/SkillBadge'
 
 const skills = ['JavaScript', 'TypeScript', 'PHP', 'Java']
@@ -57,7 +57,7 @@ const Home: NextPage = () => {
         </section>
       </div>
 
-      <section className="w-full py-16 md:bg-projects-bg dark:bg-none bg-no-repeat bg-right bg-cover">
+      {/* <section className="w-full py-16 md:bg-projects-bg dark:bg-none bg-no-repeat bg-right bg-cover">
         <Container>
           <SectionHeading>
             <span className="text-brand dark:text-light">My Projects</span>
@@ -71,7 +71,7 @@ const Home: NextPage = () => {
             ))}
           </div>
         </Container>
-      </section>
+      </section> */}
     </div>
   )
 }
